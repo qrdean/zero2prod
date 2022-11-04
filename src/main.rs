@@ -3,7 +3,6 @@ use zero2prod::startup::run;
 use zero2prod::configuration::get_configuration;
 use zero2prod::telemetry::{get_subscriber, init_subscriber};
 use sqlx::postgres::PgPoolOptions;
-use secrecy::ExposeSecret;
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
